@@ -1,6 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { UIShellModule } from 'carbon-components-angular/ui-shell/ui-shell.module';
+
+TestBed.configureTestingModule({
+  declarations: [HeaderComponent],
+  imports: [UIShellModule]
+});
 
 describe('AppComponent', () => {
   beforeEach(async () => {
