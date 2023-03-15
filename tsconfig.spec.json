@@ -1,14 +1,31 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./out-tsc/spec",
-    "types": [
-      "jasmine"
-    ]
-  },
-  "include": [
+	"compilerOptions": {
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"lib": [
+			"dom",
+			"es2016"
+		],
+		"outDir": "./out-tsc/spec",
+		"module": "es2020",
+		"target": "es2015",
+		"baseUrl": "",
+		"types": [
+			"jasmine",
+			"node"
+		]
+	},
+	"files": [
+		"src/test.ts",
+		"src/polyfills.ts"
+	],
+	"include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
-  ]
+	]
 }
