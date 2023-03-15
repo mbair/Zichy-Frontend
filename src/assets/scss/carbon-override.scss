@@ -2,3 +2,8 @@
 .bx--header__nav {
 	display: block;
 }
+
+// Hide IBM text on the header
+.bx--header__name--prefix {
+  display: none;
+}
