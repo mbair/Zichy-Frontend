@@ -5,6 +5,12 @@ import {
   TableModel,
   TableRowSize,
 } from 'carbon-components-angular';
+import {
+	FormBuilder,
+	FormControl,
+	FormGroup,
+	ReactiveFormsModule
+} from "@angular/forms";
 
 @Component({
 	selector: 'app-starter-home',
@@ -18,7 +24,21 @@ export class HomeComponent implements OnInit {
     { name: 'Bob', age: 40, city: 'Chicago' },
   ];
 
-  ngOnInit(): void {
+  public formGroup: FormGroup | undefined;
+  public indeterminate: boolean;
+  public checked: boolean;
+
+	constructor(protected formBuilder: FormBuilder) {
+    this.indeterminate = false;
+    this.checked = false;
+  }
+
+	ngOnInit(): void {
+
+    this.formGroup = this.formBuilder.group({
+			disabledCheckbox: this.formBuilder.control({value: true, disabled: true}),
+			checkbox: this.formBuilder.control(false)
+		});
 
     this.model.header = [
       new TableHeaderItem({ data: 'Szállás típusa' }),
@@ -37,6 +57,15 @@ export class HomeComponent implements OnInit {
       [new TableItem({ data: 'Gyermek szállás nélkül' }), new TableItem({ data: '17 300 Ft' })],
     ];
   }
+
+  onIndeterminateChange(event: any){
+    return;
+  }
+
+  onCheckedChange(event: any){
+    return;
+  }
+
   title = 'tableTest';
   model = new TableModel();
   size: TableRowSize = 'md';

@@ -11,6 +11,12 @@ import {
   TableModule,
   CheckboxModule,
 } from 'carbon-components-angular';
+import {
+	FormBuilder,
+	FormControl,
+	FormGroup,
+	ReactiveFormsModule
+} from "@angular/forms";
 import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({

@@ -40,20 +40,6 @@
         FIGYELEM! A regisztráció csak a teljes összeg befizetésével együtt érvényes! A befizetéshez szükséges információkat a regisztrációs lap kitöltése után egy visszaigazoló e-mail formájában kapjátok meg.<br>
         <br>
         Ha bármi kérdésetek van, keressetek bátran a nyarihetek@golgota.hu e-mail címen keresztül!<br>
-        <br>
-        ---------- // ----------<br>
-        <br>
-        Dear Church,<br>
-        <br>
-        You are all invited to Vajta this summer for times of teaching, worship and all kinds of creative, fun and sport activities.<br>
-        Childcare for babies and children’s ministry for children over 3 years of age will be provided during the morning and evening Bible studies / programs.<br>
-        <br>
-        Registration deadline for both weeks: July 19, 2020 (Sunday)<br>
-        Registration is mandatory for everyone who would like to take part in any of the programs of the week except the baptism on Thursday.<br>
-        <br>
-        ATTENTION! Your registration will be valid only after the full price is paid! All the information about the payment will be sent to you in a confirmation email after you fill out the registration form.<br>
-        <br>
-        For further information feel free to write to nyarihetek@golgota.hu.<br>
 			</p>
 
       <!-- <ibm-table [data]="data">
@@ -80,11 +66,6 @@
       <p class="starter-tab-description">
         Változás a regisztrációban // A change in registration<br>
         Az elmúlt évekhez képest 2 változás is történt, ezért kérünk, hogy mindent figyelmesen olvassatok végig. Amellett, hogy idén már kevesebb adatra van szükség, a családok regisztrálhatnak egyben is, így a közös adatokat elég egyszer megadni. Ahol idősebb gyermek (is) van, aki a családtól külön szálláson szeretne lenni, vagy nem a többiekkel egy napon érkezik, ott érdemes őt külön, egyéni regisztrációban leadni.<br>
-        <br>
-        ---------- // ----------<br>
-        <br>
-        There are two changes introduced compared to previous years so we are asking you to read everything carefully. Less data is required this year and families can register together providing their common information only once. Please fill out a different form if an older child would like to be housed separately from the rest of the family or arrives on a different date.<br>
-        <br>
       </p>
 
 
@@ -116,117 +97,422 @@
       <br>
       <br>
 
-      Egyéni regisztrációt adok le
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-checkbox
+            [indeterminate]="indeterminate"
+            [checked]="checked"
+            (indeterminateChange)="onIndeterminateChange($event)"
+            (checkedChange)="onCheckedChange($event)">
+            Egyéni regisztrációt adok le
+          </ibm-checkbox>
 
-      Családi regisztrációt adok le.
+          <ibm-checkbox
+            [indeterminate]="indeterminate"
+            [checked]="checked"
+            (indeterminateChange)="onIndeterminateChange($event)"
+            (checkedChange)="onCheckedChange($event)">
+            Családi regisztrációt adok le.
+          </ibm-checkbox>
+        </div>
+      </div>
 
-				<div ibmRow>
-					<div ibmCol>
-						<ibm-label helperText="Helper text">
-							Text input label
-							<input
-								ibmText
-								name="text-input-9"
-								placeholder="Text input placeholder"
-							/>
-						</ibm-label>
-					</div>
-					<div ibmCol></div>
-				</div>
-				<div ibmRow>
-					<div ibmCol></div>
-					<div ibmCol></div>
-				</div>
+      <br>
+      <br>
 
-				<div ibmRow>
-					<div ibmCol>
-						<ibm-label helperText="Helper text">
-							Text input label
-							<input
-								ibmText
-								name="text-input-9"
-								placeholder="Text input placeholder"
-							/>
-						</ibm-label>
-					</div>
-					<div ibmCol></div>
-				</div>
-				<div ibmRow>
-					<div ibmCol></div>
-					<div ibmCol></div>
-				</div>
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Gyülekezet
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Gyülekezet..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
 
-				<div ibmRow>
-					<div ibmCol>
-						<ibm-label helperText="Helper text">
-							Text input label
-							<input
-								ibmText
-								name="text-input-9"
-								placeholder="Text input placeholder"
-							/>
-						</ibm-label>
-					</div>
-					<div ibmCol></div>
-				</div>
-				<div ibmRow>
-					<div ibmCol></div>
-					<div ibmCol></div>
-				</div>
+      <br>
 
-				<div ibmRow>
-					<div ibmCol>
-						<ibm-label helperText="Helper text">
-							Text input label
-							<input
-								ibmText
-								name="text-input-9"
-								placeholder="Text input placeholder"
-							/>
-						</ibm-label>
-					</div>
-					<div ibmCol></div>
-				</div>
-				<div ibmRow>
-					<div ibmCol></div>
-					<div ibmCol></div>
-				</div>
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Vezetéknév
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Vezetéknév..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
 
-				<div ibmRow>
-					<div ibmCol>
-						<ibm-label helperText="Helper text">
-							Text input label
-							<input
-								ibmText
-								name="text-input-9"
-								placeholder="Text input placeholder"
-							/>
-						</ibm-label>
-					</div>
-					<div ibmCol></div>
-				</div>
-				<div ibmRow>
-					<div ibmCol></div>
-					<div ibmCol></div>
-				</div>
+      <br>
 
-				<div ibmRow>
-					<div ibmCol>
-						<ibm-label helperText="Helper text">
-							Text input label
-							<input
-								ibmText
-								name="text-input-9"
-								placeholder="Text input placeholder"
-							/>
-						</ibm-label>
-					</div>
-					<div ibmCol></div>
-				</div>
-				<div ibmRow>
-					<div ibmCol></div>
-					<div ibmCol></div>
-				</div>
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="Helper text">
+            Keresztnév
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Keresztnév..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="Helper text">
+            Nem
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Nem..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="Helper text">
+            E-mail cím
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="E-mail cím..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Telefonszám
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Telefonszám..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Születési dátum
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Születési dátum..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Korcsoport
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Korcsoport..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Állampolgárság
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Állampolgárság..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Ország
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Ország..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Irányítószám
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Irányítószám..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Étrend
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Étrend..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <p class="starter-tab-description">
+        A szálláselosztás jelentkezési sorrendben történik, túljelentkezés esetén a jelentkezők várólistára kerülnek, és felszabaduló helyek esetén kerülnek elhelyezésre. Túljelentkezés esetén a teljes hétre jelentkezők elsőbbséget élveznek a részidős jelentkezőkkel szemben.
+      </p>
+
+      <br>
+
+      <p class="starter-tab-description">
+        Szállástípusok // Types of accommodation<br>
+        A hét során ötféle szállás közül lehet választani<br>
+        - Apartman: a kastélyparkban és a parkon kívül található lakások, amelyekben található 2-5 hálószoba, fürdőszoba, nappali és konyha<br>
+        - Maranatha 2 ágyas szoba: A kastélyparkon kívül található épületben lévő saját fürdőszobával rendelkő szoba.<br>
+        - Maranatha 4 ágyas szoba: A kastélyparkon kívül található épületben lévő saját fürdőszobával rendelkő szoba, ahol két emeltes ágy van.<br>
+        - Kastély: 4-6-8 ágyas kollégiumi szoba közös fürdővel, egy épületben a programok helyszíneivel.<br>
+        - Kemping: A kastély mellett kijelölt füves területen lehet felverni a sátrakat. Áram biztosított, a kempingezők a kastély fürdőszobáit használhatják, de sátorról mindenki magának gondoskodik.<br>
+      </p>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Érkezés napja
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Érkezés napja..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Távozás napja
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Távozás napja..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <p class="starter-tab-description">
+        Részvételi díjak // Prices<br>
+        Az árak az érkezés napján vacsorát, a távozás napján reggelit, teljes napokon háromszori étkezést tartalmaznak. Az árak csomagárak, az étkezés és szállás díjának szétbontására nincs lehetőség!<br>
+        Az árak tekintetében gyereknek számít az, aki a 3. életévét már betöltötte, de a 10. életévét még nem töltötte be a hét első napján. A 0-2 éves kor közötti gyermekeknek nincs részvételi díj.<br>
+        <br>
+        A részidős vagy szállást nem igénylő résztvevők részvételi díjáról a regisztráció és a részletek pontosítása után e-mailben egyeztetünk.<br>
+      </p>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Szállástípus
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Szállástípus..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Speciális igény (pl. szobatárs) - Lehetőség szerint igyekszünk teljesíteni a kéréseiteket.
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Speciális igény..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Speciális igény (pl. szobatárs) - Lehetőség szerint igyekszünk teljesíteni a kéréseiteket.
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Speciális igény..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Fizetési mód
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Fizetési mód..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Ha szeretnéd támogatni a programokat  és azokat, akik nem tudják kifizetni a teljes költséget, kérlek jelöld meg a felajánlott támogatás összegét!
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Támogatás összege..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Ha szeretnél támogatást kérni, kérlek írd meg, mekkora összegre lenne szükséged!
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Ha szeretnél támogatást kérni, kérlek írd meg, mekkora összegre lenne szükséged  ..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <div ibmRow>
+        <div ibmCol>
+          <ibm-label helperText="">
+            Ha szükséged van támogatásra, kérlek röviden indokold!
+            <input
+              ibmText
+              name="text-input-9"
+              placeholder="Ha szükséged van támogatásra, kérlek röviden indokold..."
+            />
+          </ibm-label>
+        </div>
+        <div ibmCol></div>
+      </div>
+
+      <br>
+
+      <p class="starter-tab-description">
+        Hozzájárulási nyilatkozat<br>
+        Jelentkezésemmel elfogadom, hogy a személyes adataimat a Golgota Keresztény Gyülekezet Budapest (Bp., 1073 Erzsébet krt 13.) által kinevezett szervezők a rendezvény lezárásáig, a tábor szervezése céljából tárolják, és azokat kizárólag a szállásszolgáltatóknak továbbítsák. A Golgota Keresztény Gyülekezet Budapest a rendezvény lezárultával törli az adatokat (legkésőbb 2020.09.30-ig) - kivétel az e-mail címet, amelyre hasonló rendezvény céljával küldhet információs levelet. <br>
+      </p>
+
+      <ibm-checkbox
+        [indeterminate]="indeterminate"
+        [checked]="checked"
+        (indeterminateChange)="onIndeterminateChange($event)"
+        (checkedChange)="onCheckedChange($event)">
+        Elfogadom a hozzájárulási nyilatkozatot
+      </ibm-checkbox>
+
+      <br>
+
+      <ibm-checkbox
+        [indeterminate]="indeterminate"
+        [checked]="checked"
+        (indeterminateChange)="onIndeterminateChange($event)"
+        (checkedChange)="onCheckedChange($event)">
+        Mind a regisztrációs lapon, mind a nyarihetek.golgota.hu oldalon található információkat figyelmesen elolvastam és tudomásul veszem.
+      </ibm-checkbox>
+
+
+
+
+
+
+      <br><br><br><br><br>
 
 
 			<div ibmRow>
@@ -244,7 +530,8 @@
 				</div>
 			</div>
 		</ibm-tab>
-		<ibm-tab heading="carbon-charts">
+
+		<ibm-tab heading="urlap 2">
 			<p>Description</p><br>
 			<p class="starter-tab-description">
 				Carbon Charts is an open-source JavaScript data visualization
