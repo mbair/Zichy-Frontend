@@ -56,24 +56,69 @@
         For further information feel free to write to nyarihetek@golgota.hu.<br>
 			</p>
 
-			<div ibmGrid>
-				<div ibmRow>
-					<div ibmCol>
-						<ibm-label helperText="Helper text">
-							Text input label
-							<input
-								ibmText
-								name="text-input-9"
-								placeholder="Text input placeholder"
-							/>
-						</ibm-label>
-					</div>
-					<div ibmCol></div>
-				</div>
-				<div ibmRow>
-					<div ibmCol></div>
-					<div ibmCol></div>
-				</div>
+      <!-- <ibm-table [data]="data">
+        <ng-container ibmTableColumn name="name">
+          Name
+        </ng-container>
+        <ng-container ibmTableColumn name="age">
+          Age
+        </ng-container>
+        <ng-container ibmTableColumn name="city">
+          City
+        </ng-container>
+      </ibm-table> -->
+
+
+
+      <!-- <ibm-table-container>
+        <ibm-table-header>
+          <h4 ibmTableHeaderTitle>Cím</h4>
+          <p ibmTableHeaderDescription>Leírás</p>
+        </ibm-table-header>
+      </ibm-table-container> -->
+
+      <p class="starter-tab-description">
+        Változás a regisztrációban // A change in registration<br>
+        Az elmúlt évekhez képest 2 változás is történt, ezért kérünk, hogy mindent figyelmesen olvassatok végig. Amellett, hogy idén már kevesebb adatra van szükség, a családok regisztrálhatnak egyben is, így a közös adatokat elég egyszer megadni. Ahol idősebb gyermek (is) van, aki a családtól külön szálláson szeretne lenni, vagy nem a többiekkel egy napon érkezik, ott érdemes őt külön, egyéni regisztrációban leadni.<br>
+        <br>
+        ---------- // ----------<br>
+        <br>
+        There are two changes introduced compared to previous years so we are asking you to read everything carefully. Less data is required this year and families can register together providing their common information only once. Please fill out a different form if an older child would like to be housed separately from the rest of the family or arrives on a different date.<br>
+        <br>
+      </p>
+
+
+      <ibm-table-container>
+        <ibm-table-header>
+          <h4 ibmTableHeaderTitle>Nyári hetek</h4>
+          <p ibmTableHeaderDescription>Szállás típusok és árak</p>
+        </ibm-table-header>
+        <!--
+          app-* components are for demo purposes only.
+          You can create your own implementation by using the component source as an example.
+        -->
+        <ibm-table
+          [model]="model"
+          [stickyHeader]="false"
+          [size]="size"
+          [skeleton]="false"
+          [enableSingleSelect]="false"
+          [showSelectionColumn]="false"
+          [striped]="false"
+          [sortable]="false"
+          [isDataGrid]="false"
+        >
+        </ibm-table>
+      </ibm-table-container>
+
+
+      <br>
+      <br>
+      <br>
+
+      Egyéni regisztrációt adok le
+
+      Családi regisztrációt adok le.
 
 				<div ibmRow>
 					<div ibmCol>
@@ -164,21 +209,38 @@
 					<div ibmCol></div>
 					<div ibmCol></div>
 				</div>
-			</div>
+
+				<div ibmRow>
+					<div ibmCol>
+						<ibm-label helperText="Helper text">
+							Text input label
+							<input
+								ibmText
+								name="text-input-9"
+								placeholder="Text input placeholder"
+							/>
+						</ibm-label>
+					</div>
+					<div ibmCol></div>
+				</div>
+				<div ibmRow>
+					<div ibmCol></div>
+					<div ibmCol></div>
+				</div>
 
 
 			<div ibmRow>
 				<div ibmCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<ibm-clickable-tile href="https://github.com/IBM/carbon-components-angular" target="_blank">Repository</ibm-clickable-tile>
+					<ibm-clickable-tile href="https://github.com/IBM/carbon-components-angular" target="_blank">Konferenciák</ibm-clickable-tile>
 				</div>
 				<div ibmCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<ibm-clickable-tile href="https://angular.carbondesignsystem.com/" target="_blank">Component Library</ibm-clickable-tile>
+					<ibm-clickable-tile href="https://angular.carbondesignsystem.com/" target="_blank">Szobák</ibm-clickable-tile>
 				</div>
 				<div ibmCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<ibm-clickable-tile href="https://angular.carbondesignsystem.com/documentation/" target="_blank">Documentation</ibm-clickable-tile>
+					<ibm-clickable-tile href="https://angular.carbondesignsystem.com/documentation/" target="_blank">Foglalások</ibm-clickable-tile>
 				</div>
 				<div ibmCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<ibm-clickable-tile href="https://www.npmjs.com/package/carbon-components-angular" target="_blank">NPM</ibm-clickable-tile>
+					<ibm-clickable-tile href="https://www.npmjs.com/package/carbon-components-angular" target="_blank">Egyedi kérések</ibm-clickable-tile>
 				</div>
 			</div>
 		</ibm-tab>
