@@ -8,10 +8,13 @@ import {
 	TabsModule,
 	TilesModule,
 	InputModule,
+  TableModule,
+  CheckboxModule,
 } from 'carbon-components-angular';
 import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
+  declarations: [HomeComponent],
 	imports: [
 		CommonModule,
 		HomeRoutingModule,
@@ -19,8 +22,15 @@ import { HomeRoutingModule } from './home-routing.module';
 		ListModule,
 		TabsModule,
 		TilesModule,
-		InputModule
+		InputModule,
+    TableModule,
+    CheckboxModule,
 	],
-	declarations: [HomeComponent]
+  exports: [
+    TableModule,
+  ],
 })
-export class HomeModule { }
+
+export class HomeModule {
+
+}
